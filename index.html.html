@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+</head>
+<style>
+    
+    a{
+        text-transform: none;
+        text-decoration: none;
+        color: black;
+    }
+
+    .header {
+        width: 100%;
+        height: 70px;
+        background-color: rgba(128, 128, 128, 0.308);
+        position: absolute;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .header-name {
+        position: relative;
+        top: 25px;
+        left: 50px;
+        font-size: 22px;
+    }
+
+    .header-list li {
+        position: relative;
+        list-style: none;
+        display: inline;
+        padding-left: 25px;
+        font-size: 18px;
+        top: -15px;
+        left: 65%
+    }
+
+    .quotes {
+        position: relative;
+        top: 70px;
+        height: 250px;
+        background-color: black;
+    }
+
+    .a1 {
+        font-size: 40px;
+        position: absolute;
+        color: white;
+        text-align: center;
+        top: 30%;
+        left: 37%;
+    }
+
+    .a2 {
+        font-size: 40px;
+        position: absolute;
+        color: white;
+        text-align: center;
+        top: 35%;
+        left: 29%;
+    }
+
+    .intro {
+        width: 100%;
+        height: 450px;
+        background-color: rgb(40, 101, 223);
+        position: absolute;
+        top: 320px;
+    }
+
+    .intro h2 {
+        position: relative;
+        left: 19%;
+        top: 25%;
+        font-size: 28px;
+    }
+
+    .intro p {
+        position: relative;
+        left: 19%;
+        top: 25%;
+        width: 800px;
+    }
+
+    .achievement {
+        width: 100%;
+        height: 800px;
+        position: absolute;
+        top: 770px;
+        background-color: black;
+    }
+
+    .achievement p {
+        position: relative;
+        top: 3%;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .box {
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 250px;
+        border: 2px solid red;
+        margin-left: 150px;
+        border-radius: 25px;
+        background-color: white;
+        transition: 150ms;
+        transition: 500ms linear;
+
+    }
+
+    .box1 {
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 250px;
+        border: 2px solid red;
+        margin-left: 150px;
+        border-radius: 25px;
+        background-color: white;
+        transition: 500ms linear;
+    }
+
+    .box:hover,
+    .box1:hover {
+        background-color: rgb(40, 101, 223);
+    }
+
+    .box img,
+    .box1 img {
+        position: relative;
+        left: 37%;
+        top: 5%;
+    }
+
+    .box h3,
+    .box1 h3 {
+        text-align: center;
+    }
+
+    .box p,
+    .box1 p {
+        text-align: center;
+        top: 25px;
+        color: black;
+        font-size: 16px;
+    }
+
+    .skills {
+        position: absolute;
+        width: 100%;
+        top: 1570px;
+        height: 500px;
+        background-color: rgba(128, 128, 128, 0.308);
+    }
+
+    .tech {
+        top: 35px;
+        position: relative;
+        width: 400px;
+        text-align: center;
+        left: 150px;
+    }
+
+    .tech ul li {
+        list-style: none;
+        text-align: left;
+        line-height: 29px;
+    }
+
+    progress {
+        height: 10px;
+        width: 300px;
+        background-color: black;
+    }
+
+    /* For Firefox */
+    progress::-moz-progress-bar {
+        background: red;
+    }
+
+    /* For Chrome or Safari */
+    progress::-webkit-progress-value {
+        background: red;
+    }
+
+    /* For IE10 */
+    progress {
+        background: red;
+    }
+
+
+    progress::-moz-progress-bar:hover {
+        background: rgb(40, 101, 223);
+    }
+
+    /* For Chrome or Safari */
+    progress::-webkit-progress-value:hover {
+        background: rgb(40, 101, 223);
+    }
+
+    /* For IE10 */
+    progress:hover {
+        background: rgb(40, 101, 223);
+    }
+
+    .lang {
+        top: -315px;
+        position: relative;
+        width: 400px;
+        text-align: center;
+        left: 950px;
+    }
+
+    .lang ul li {
+        list-style: none;
+        text-align: left;
+        line-height: 29px;
+    }
+
+    .contact {
+        width: 100%;
+        position: relative;
+        height: 400px;
+        background-color: black;
+        top: 1770px;
+        color: white;
+        text-align: center;
+    }
+
+    .forms {
+        position: relative;
+        top: 50px;
+        left: 34%;
+        width: 400px;
+        border: 1px saddlebrown solid;
+        padding: 30px;
+    }
+
+    .forms input {
+        margin-top: 15px;
+        padding: 5px;
+        width: 290px;
+    }
+</style>
+
+<body>
+    <header></header>
+    <section></section>
+    <div class="header">
+        <span class="header-name">Sakthi Murugesan</span>
+        <ul class="header-list">
+            <li>Home</li>
+            <li><a href="#intro">About me</a></li>
+            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div id="quotes" class="quotes">
+        <s class="a1">Pratice Makes Perfect</s>
+        <p class="a2">Perfect Pratice Makes Perfect</p>
+    </div>
+    <div id="intro" class="intro">
+        <h2>Sakthi Murugesan</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, et iste, inventore odio hic cum maiores
+            facilis provident dolor animi sint odit ad voluptatem voluptatibus enim dignissimos cupiditate aspernatur
+            molestiae dolores harum. Ex itaque atque similique quibusdam nobis quaerat minus earum officiis totam,
+            soluta aspernatur consequatur aliquam autem aut saepe officia repellendus ipsam dolor molestiae et
+            dignissimos voluptatum provident nisi! Reiciendis provident quia cumque consequatur, nisi maiores nesciunt
+            officiis magni temporibus distinctio iste minus sit omnis, a dolore iusto animi vel? Neque aut incidunt
+            minus, quisquam ipsum possimus dolorem inventore corrupti quibusdam molestiae ex in rem quod, officia eius
+            nulla fugiat voluptatibus. Consectetur commodi esse, debitis rerum nesciunt corrupti ipsam, facere odio
+            voluptatum laudantium reiciendis. Saepe error voluptatibus dolores sint, aliquid aliquam, dolorem culpa
+            itaque sapiente, commodi distinctio delectus laboriosam eaque. E
+            x corporis quasi itaque sapiente recusandae. Commodi sit quibusdam incidunt omnis ullam! Dignissimos quo
+            recusandae perspiciatis quaerat ipsum autem.</p>
+    </div>
+    <div id="achievement" class="achievement">
+
+        <p>Achievement</p>
+        <p>Some of my best prokects so far</p><br>
+        <hr style="width: 500px;height: 5px;background-color: white;border-radius: 3px;">
+        <div class="ach-inner" style="position: relative;margin-top:35px;margin-left: 75px;">
+            <div class="box">
+                <img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset="">
+                <h3>School first</h3>
+                <p>I had completed my school in St.Joseph High School with 95% in 12<sup>th</sup> standard</p>
+            </div>
+            <div class="box"><img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset="">
+                <h3>Youtuber</h3>
+                <p>I am successfully running a youtube channel with 300k+ subscriber posting videos about skill
+                    development</p>
+            </div>
+            <div class="box"><img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset="">
+                <h3>School Cricket Team Captain</h3>
+                <p>I am very good in sports. I had lead my team in national level cricket match</p>
+            </div>
+        </div>
+        <div class="ach-inner-1" style="position: relative;top:25px;margin-left: 75px;">
+            <div class="box1"><img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset=""></div>
+            <div class="box1"><img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset=""></div>
+            <div class="box1"><img src="./html-icon-code-6.jpg" height="60px" align="center" alt="" srcset=""></div>
+        </div>
+    </div>
+    <div id="skills" class="skills">
+        <h1 align="center" style="position:relative;top:10px;">Skills</h1>
+        <div class="tech">
+            <h3 style="position: relative;">TECHNICAL SKILLS</h3>
+            <ul style="position: relative;">
+
+                <li>HTML</li>
+                <li><progress max="100" value="90"></progress></li>
+                <li>CSS</li>
+                <li><progress max="100" value="80"></progress></li>
+                <li>Javascript</li>
+                <li><progress max="100" value="70"></progress></li>
+                <li>C++</li>
+                <li><progress max="100" value="95"></progress></li>
+                <li>Java</li>
+                <li><progress max="100" value="90"></progress></li>
+            </ul>
+        </div>
+        <div class="lang">
+            <h3 style="position: relative;">LANGUAGE SKILLS</h3>
+            <ul style="position: relative;">
+
+                <li>Tamil</li>
+                <li><progress max="100" value="100"></progress></li>
+                <li>English</li>
+                <li><progress max="100" value="90"></progress></li>
+                <li>Hindi</li>
+                <li><progress max="100" value="60"></progress></li>
+                <li>Telugu</li>
+                <li><progress max="100" value="40"></progress></li>
+                <li>Malayalam</li>
+                <li><progress max="100" value="20"></progress></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="contact" class="contact">
+        <h2 style="top:45px;position:relative;">CONTACT</h2>
+        <form action="" class="forms">
+            <input type="text" placeholder="ENTER YOUR NAME" name="" id=""><br>
+            <input type="email" placeholder="ENTER YOUR EMAIL" name="" id=""><br>
+            <input type="text" placeholder="ENTER YOUR MESSAGE" name="" id=""><br>
+            <input type="submit" value="SEND A MESSAGE" style="padding: 5px;">
+
+
+        </form>
+
+    </div>
+<footer></footer>
+</body>
+
+</html>
